@@ -3,12 +3,14 @@ This is a script that will convert golang struct into json.
 
 # Input
 golang struct (non bulk struct)
+
 *Sample*
 
-![Sample Input](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+![Sample Input](https://raw.githubusercontent.com/sylviasari/script-collection/master/Sample%20Input.png)
 
 # Output
 json
+
 *Sample*
 
 ![Sample Output](https://raw.githubusercontent.com/sylviasari/script-collection/master/Sample%20Output.png)
