@@ -1,0 +1,11 @@
+# idea
+.idea
+.vscode
+
+# app specific vendor
+vendor
+
+# binary
+/struct-to-json
+
+.DS_Store

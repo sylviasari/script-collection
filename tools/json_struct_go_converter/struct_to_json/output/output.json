@@ -1,0 +1,20 @@
+{
+    "name": "John",
+    "FavoriteFoods": [
+        "Noodles",
+        "Fried chicken"
+    ],
+    "age": 20,
+    "order": {
+        "order_id": 123,
+        "products": [
+            {
+                "product_name": "USB Cable"
+            },
+            {
+                "product_name": "Charger"
+            }
+        ],
+        "grand_total": 125000
+    }
+}
