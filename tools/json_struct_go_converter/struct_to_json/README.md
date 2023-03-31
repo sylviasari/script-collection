@@ -5,7 +5,7 @@ This is a script that will convert golang struct into json.
 golang struct (non bulk struct)
 *Sample*
 
-![Sample Input](https://raw.githubusercontent.com/sylviasari/script-collection/master/Sample%20Input.png)
+![Sample Input]([https://raw.githubusercontent.com/sylviasari/script-collection/master/Sample%20Input.png](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png))
 
 
 # Output
