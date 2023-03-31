@@ -5,15 +5,72 @@ This is a script that will convert golang struct into json.
 golang struct (non bulk struct)
 
 *Sample*
+```
+type input struct {
+	Name          string `json:"name"`
+	Address       string `json:"address,omitempty"`
+	FavoriteFoods []string
+	Age           int   `json:"age"`
+	Order         order `json:"order"`
+}
 
-![Sample Input](https://raw.githubusercontent.com/sylviasari/script-collection/master/Sample%20Input.png)
+type order struct {
+	OrderID    int64     `json:"order_id"`
+	Product    []product `json:"products"`
+	GrandTotal float64   `json:"grand_total"`
+}
+
+type product struct {
+	ProductName string `json:"product_name"`
+}
+
+var Input interface{} = &input{
+	Name:          "John",
+	FavoriteFoods: []string{"Noodles", "Fried chicken"},
+	Age:           20,
+	Order: order{
+		OrderID: 123,
+		Product: []product{
+			{
+				ProductName: "USB Cable",
+			},
+			{
+				ProductName: "Charger",
+			},
+		},
+		GrandTotal: float64(125000),
+	},
+}
+```
+
 
 # Output
 json
 
 *Sample*
 
-![Sample Output](https://raw.githubusercontent.com/sylviasari/script-collection/master/Sample%20Output.png)
+```
+{
+    "name": "John",
+    "FavoriteFoods": [
+        "Noodles",
+        "Fried chicken"
+    ],
+    "age": 20,
+    "order": {
+        "order_id": 123,
+        "products": [
+            {
+                "product_name": "USB Cable"
+            },
+            {
+                "product_name": "Charger"
+            }
+        ],
+        "grand_total": 125000
+    }
+}
+```
 
 
 # How to Run?
